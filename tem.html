@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        button {
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Wireless Headphones">
+        <h2>Wireless Headphones</h2>
+        <p>Price: ₹2999</p>
+        <button onclick="buyNow()">Buy Now</button>
+        <ul>
+            <li>High-quality sound</li>
+            <li>Bluetooth connectivity</li>
+            <li>Long battery life</li>
+            <li>Comfortable ear cushions</li>
+        </ul>
+        <label for="color">Choose Color:</label>
+        <select id="color">
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+
+    <script>
+        function buyNow() {
+            alert("Redirecting to payment...");
+            window.location.href = "checkout.html"; // Replace with actual checkout URL
+        }
+    </script>
+</body>
+</html>
